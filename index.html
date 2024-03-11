@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneCenter v1.0 by AS</title>
     <style>
-        :root{
-            --container-brand:#6161bf;
-            --content-brand:#6161bf;
-            --content-white:#ffffff;
+        :root {
+            --container-brand: #6161bf;
+            --content-brand: #6161bf;
+            --content-white: #ffffff;
         }
 
-        button{
-            background-color: transparent;
+        button {
             border: none;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            background-color: transparent;
+            padding: 16px 16px;
         }
 
-        button:hover{
+        button:hover {
             background-color: var(--content-white);
         }
-        a{
-            text-decoration: none;
+
+        button a {
             color: var(--content-white);
+            text-decoration: none;
+
         }
-        a:hover{
+
+        button:hover a {
             color: var(--content-brand);
         }
-        
     </style>
 </head>
+
 <body style="margin: 0;">
-    <header style="display: flex; justify-content: center;background-color:var(--container-brand); color: var(--content-white); padding:8px 16px; max-height: 5vh;">
-       <div style="display: flex; justify-content: space-between; width: 80%; max-width: 1024px;">
-            <span>One Center v1.0</span>
-            <nav style="color: var(--content-whtie);">
-                <button><a style="text-decoration: none;" href="#">Home</a></button>    
-                <button><a style="text-decoration: none;" href="#">Projects</a></button>    
-                <button><a style="text-decoration: none;" href="#">Casestudies</a></button>    
-                <button><a style="text-decoration: none;" href="#">Contact Us</a></button>    
+    <header
+        style="display: flex; justify-content: center; align-items: center;background-color:var(--container-brand); height: 80px;">
+        <div style="display: flex; justify-content: space-between; width: 80%; max-width: 1024px;height: 100%;">
+            <span style="display: flex;align-items: center; color: var(--content-white);padding:8px; height: 100%;">One
+                Center v1.0</span>
+            <nav style="display: flex; height: 100%;">
+                <button><a href="#">Home</a></button>
+                <button><a href="#">Projects</a></button>
+                <button><a href="#">Casestudies</a></button>
+                <button><a href="#">Contact Us</a></button>
             </nav>
-       </div>
+        </div>
     </header>
 </body>
+
 </html>
